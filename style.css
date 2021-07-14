@@ -1,0 +1,121 @@
+:root {
+  --main-font-family: "Montserrat", sans-serif;
+  --main-color: #06c;
+  --main-bg-color: #fff;
+  --title-size: 3.4rem;
+  --paragrapg-size: 1rem;
+  --block-title-size: 2rem;
+  --link-size: 16px;
+  --fw4: 400;
+  --fw5: 500;
+  --fw7: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+}
+/* hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+} */
+hr {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
+  max-width: 1000px;
+  margin: auto;
+  height: 7px;
+  background: var(--main-color);
+  margin-top: 70px;
+}
+.wrapper {
+  /* border: 10px solid red; */
+  width: 100%;
+  height: 100vh;
+}
+.container-1 {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  /* background-color: yellowgreen; */
+  border: #fff 1px solid;
+  /* font-weight: 400; */
+}
+.container-2 {
+  position: relative;
+  /* background-color: turquoise; */
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 80vh;
+}
+
+#main-title {
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* text-align: center;
+  padding-top: 50px; */
+  font-size: var(--title-size);
+  font-weight: var(--fw7);
+}
+#block-title {
+  color: var(--main-color);
+  text-align: center;
+  margin: 20px;
+  font-size: var(--block-title-size);
+  font-weight: var(--fw5);
+}
+.grid {
+  display: grid;
+  /* border: 10px solid red; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 50px; */
+  column-gap: 100px;
+  /* background-color: violet; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid h3 {
+  font-size: var(--block-title-size);
+
+  font-weight: var(--fw4);
+}
+.grid img {
+  padding: 10px;
+}
+p {
+  font-size: var(--paragrapg-size);
+}
+.box {
+  /* background-color: #f4f4f4; */
+  /* border: 10px solid #06c; */
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+button {
+  background-color: var(--main-color);
+  width: 100px;
+  height: 30px;
+  color: var(--main-bg-color);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
