@@ -61,7 +61,7 @@ p {
   column-gap: 30px;
   flex-wrap: wrap;
   margin-top: 40px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .box h4 {
   margin: 0;
