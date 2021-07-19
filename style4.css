@@ -46,13 +46,14 @@ li {
   font-family: var(--font-family-secondary);
 }
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 h4,
 img,
 p {
-  padding-bottom: 10px;
+  padding: 20px;
 }
 .grid {
   display: flex;
@@ -60,6 +61,7 @@ p {
   column-gap: 30px;
   flex-wrap: wrap;
   margin-top: 40px;
+  border: 1px solid red;
 }
 .box h4 {
   margin: 0;
@@ -67,21 +69,30 @@ p {
 .box {
   padding: 10px;
   box-shadow: 5px 4px 10px #ddd;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 button {
   background-color: var(--bg-secondary);
   color: #fff;
   border-radius: 5px;
-  width: 100px;
-  height: 2.2rem;
+  width: 7rem;
+  height: 2.4rem;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  /* padding: 20px; */
+  margin-top: 10px;
 }
 button:hover {
   cursor: pointer;
+  background-color: rgb(95, 92, 92);
+  transition: 0.3s ease-out;
 }
 @media screen and (max-width: 700px) {
   .grid {
     display: block;
-    width: 75%;
+    width: 80%;
     margin-inline: auto;
     margin-top: 40px;
   }
