@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --bg-primary: #d82028;
+  --bg-secondary: #373656;
+  --font-family-primary: "Poppins", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+  --color-white: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-primary);
+  margin-bottom: 0px;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-family-secondary);
+  margin: 0px;
+  line-height: 24px;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--font-family-secondary);
+}
+h1,
+h2 {
+  text-align: center;
+}
+h3 {
+  margin: 0;
+}
+body {
+  background-color: #f3eed9;
+}
+.container-1 {
+  width: 500px;
+  margin-inline: auto;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-around;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.grid-items {
+  padding: 15px;
+  box-shadow: 5px 4px 10px #ddd;
+  background-color: var(--color-white);
+}
+@media (max-width: 1150px) {
+  .grid {
+    display: block;
+  }
+  .grid-items {
+    margin-bottom: 30px;
+    width: 350px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-1 {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .grid-items {
+    width: 80%;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 14px;
+    padding: 4px 0px;
+  }
+}
