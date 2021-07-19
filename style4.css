@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --bg-primary: #d82028;
+  --bg-secondary: #373656;
+  --font-family-primary: "Poppins", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+  --color-white: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-primary);
+  margin-bottom: 0px;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-family-secondary);
+  margin: 0px;
+  line-height: 24px;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--font-family-secondary);
+}
+h1,
+h2 {
+  text-align: center;
+}
+h3,
+img,
+p {
+  padding-bottom: 10px;
+}
+.grid {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box h3 {
+  margin: 0;
+}
+.box {
+  padding: 10px;
+  box-shadow: 5px 4px 10px #ddd;
+}
+button {
+  background-color: #06c;
+  color: #fff;
+  border-radius: 3px;
+  width: 85px;
+  height: 2rem;
+}
+button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .grid {
+    display: block;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 40px;
+  }
+  .box {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 220px) and (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 14px;
+    padding: 4px 0px;
+  }
+}
